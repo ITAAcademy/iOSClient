@@ -33,7 +33,7 @@ struct ProductListModuleBuilder: ModuleBuilderProtocol
         let storyboard = UIStoryboard(name: "ProductList", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "ProductListTableViewController")
         configure(controller: controller)
-        return controller
+        return UINavigationController(rootViewController: controller)
     }
     
     mutating func set(items:[ProductListItemProtocol])

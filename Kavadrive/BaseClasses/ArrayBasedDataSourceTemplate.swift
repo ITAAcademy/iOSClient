@@ -13,7 +13,7 @@ class ArrayBasedDataSourceTemplate<C: BaseTableViewCellProtocol, P>: ArrayBasedD
 {
     typealias T = P
     
-    private var array: [P] = []
+    private(set) var array: [P] = []
     
     func updateWith(array: [P]) {
         self.array = array

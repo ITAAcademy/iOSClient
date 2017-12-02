@@ -1,5 +1,5 @@
 //
-//  DumbProductListDataSource.swift
+//  ProductListDataSource.swift
 //  Kavadrive
 //
 //  Created by Aleksey Tyurenkov on 12/2/17.
@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-class DumbProductListDataSource: ArrayBasedDataSourceTemplate<ProductListTableViewCell, ProductListItemProtocol>, ProductListDataSourceProtocol
+class ProductListDataSource: ArrayBasedDataSourceTemplate<ProductListTableViewCell, ProductListItemProtocol>, ProductListDataSourceProtocol
 {
    
     required init(items: [ProductListItemProtocol], eventHandler: ProductItemCellEventHandlerProtocol) {
@@ -20,7 +20,7 @@ class DumbProductListDataSource: ArrayBasedDataSourceTemplate<ProductListTableVi
     
     override func cell(for tableView: UITableView, at: IndexPath) -> UITableViewCell {
         let cell = super.cell(for: tableView, at: at)
-        (cell as? ProductListTableViewCell)?.configure(item: DumbProductListItem())
+        (cell as? ProductListTableViewCell)?.configure(item: array[at.row])
         return cell
     }
 

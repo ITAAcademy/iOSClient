@@ -25,7 +25,7 @@ class ProductListPresenter: ProductListPresenterProtocol
     }
     
     init(items:[ProductListItemProtocol]) {
-        dataSource = DumbProductListDataSource(items: items, eventHandler:DumbProductItemCellEventHandler())
+        dataSource = ProductListDataSource(items: items, eventHandler:DumbProductItemCellEventHandler())
     }
 
 }

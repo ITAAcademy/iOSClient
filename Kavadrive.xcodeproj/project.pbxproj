@@ -31,7 +31,7 @@
 		D995DDDE1FD342A700838FFF /* ProductItemCellEventHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDDD1FD342A700838FFF /* ProductItemCellEventHandlerProtocol.swift */; };
 		D995DDE11FD3484A00838FFF /* ModuleBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDE01FD3484A00838FFF /* ModuleBuilderProtocol.swift */; };
 		D995DDE41FD34C5D00838FFF /* DumbProductItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDE31FD34C5D00838FFF /* DumbProductItem.swift */; };
-		D995DDE61FD34CAA00838FFF /* DumbProductListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDE51FD34CAA00838FFF /* DumbProductListDataSource.swift */; };
+		D995DDE61FD34CAA00838FFF /* ProductListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDE51FD34CAA00838FFF /* ProductListDataSource.swift */; };
 		D995DDE81FD34CE400838FFF /* DumbProductItemCellEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDE71FD34CE400838FFF /* DumbProductItemCellEventHandler.swift */; };
 		D995DDEA1FD34E6B00838FFF /* BaseTableDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDE91FD34E6B00838FFF /* BaseTableDataSourceProtocol.swift */; };
 		D995DDEC1FD34F6000838FFF /* BaseTableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDEB1FD34F6000838FFF /* BaseTableViewProtocol.swift */; };
@@ -125,7 +125,7 @@
 		D995DDDD1FD342A700838FFF /* ProductItemCellEventHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemCellEventHandlerProtocol.swift; sourceTree = "<group>"; };
 		D995DDE01FD3484A00838FFF /* ModuleBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilderProtocol.swift; sourceTree = "<group>"; };
 		D995DDE31FD34C5D00838FFF /* DumbProductItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DumbProductItem.swift; sourceTree = "<group>"; };
-		D995DDE51FD34CAA00838FFF /* DumbProductListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DumbProductListDataSource.swift; sourceTree = "<group>"; };
+		D995DDE51FD34CAA00838FFF /* ProductListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListDataSource.swift; sourceTree = "<group>"; };
 		D995DDE71FD34CE400838FFF /* DumbProductItemCellEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DumbProductItemCellEventHandler.swift; sourceTree = "<group>"; };
 		D995DDE91FD34E6B00838FFF /* BaseTableDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableDataSourceProtocol.swift; sourceTree = "<group>"; };
 		D995DDEB1FD34F6000838FFF /* BaseTableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewProtocol.swift; sourceTree = "<group>"; };
@@ -233,6 +233,7 @@
 				D995DDCF1FD3342500838FFF /* ProductListModuleBuilder.swift */,
 				D995DDE21FD34C3800838FFF /* DumbClasses */,
 				D995DDC31FD32FA800838FFF /* ProductListPresenter.swift */,
+				D995DDE51FD34CAA00838FFF /* ProductListDataSource.swift */,
 				D995DDF41FD3543900838FFF /* ProductListInteractor.swift */,
 				D995DDD41FD336DE00838FFF /* Protocols */,
 				D995DDF61FD3544400838FFF /* UI */,
@@ -271,7 +272,6 @@
 			isa = PBXGroup;
 			children = (
 				D995DDE31FD34C5D00838FFF /* DumbProductItem.swift */,
-				D995DDE51FD34CAA00838FFF /* DumbProductListDataSource.swift */,
 				D995DDE71FD34CE400838FFF /* DumbProductItemCellEventHandler.swift */,
 			);
 			path = DumbClasses;
@@ -474,7 +474,7 @@
 				D995DDE11FD3484A00838FFF /* ModuleBuilderProtocol.swift in Sources */,
 				D995DDFC1FD3590A00838FFF /* ArrayBasedDataSourceProtocol.swift in Sources */,
 				D995DDDC1FD33BF100838FFF /* ProductListItemProtocol.swift in Sources */,
-				D995DDE61FD34CAA00838FFF /* DumbProductListDataSource.swift in Sources */,
+				D995DDE61FD34CAA00838FFF /* ProductListDataSource.swift in Sources */,
 				D995DDC61FD32FFA00838FFF /* ProductListViewProtocol.swift in Sources */,
 				D995DDCA1FD3318800838FFF /* ProductListRouterProtocol.swift in Sources */,
 				D995DDF51FD3543900838FFF /* ProductListInteractor.swift in Sources */,
