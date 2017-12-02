@@ -10,17 +10,12 @@ import UIKit
 
 class ProductListTableViewController: BaseTableViewController, ProductListViewProtocol {
     
-    
-    
     var presenter: ProductListPresenterProtocol!
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewLoaded()
     }
-
-
 }
 
 

@@ -15,12 +15,17 @@ class ProductListPresenter: ProductListPresenterProtocol
     var interactor: ProductListInteractorProtocol!
     weak var view: ProductListViewProtocol!
     
+    private var dataSource: ProductListDataSourceProtocol
+    
     func viewLoaded() {
         if let tableView = view as? BaseTableViewProtocol
         {
-            tableView.set(dataSource: DumbProductListDataSource(eventHandler:DumbProductItemCellEventHandler()))
+            tableView.set(dataSource: dataSource)
         }
     }
     
+    init(items:[ProductListItemProtocol]) {
+        dataSource = DumbProductListDataSource(items: items, eventHandler:DumbProductItemCellEventHandler())
+    }
 
 }

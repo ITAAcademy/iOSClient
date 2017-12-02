@@ -10,4 +10,5 @@ import Foundation
 
 protocol ProductListInteractorProtocol: class {
     var presenter: ProductListPresenterProtocol! { get set }
+    func getProductList(completion: @escaping ([ProductListItemProtocol])->())
 }

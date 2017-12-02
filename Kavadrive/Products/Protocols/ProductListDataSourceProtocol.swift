@@ -11,7 +11,7 @@ import UIKit
 
 protocol ProductListDataSourceProtocol: BaseTableDataSourceProtocol {
     
-    init(eventHandler: ProductItemCellEventHandlerProtocol)
+    init(items:[ProductListItemProtocol], eventHandler: ProductItemCellEventHandlerProtocol)
     
 }
 

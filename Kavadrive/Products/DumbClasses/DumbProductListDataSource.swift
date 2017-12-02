@@ -10,27 +10,18 @@ import Foundation
 import UIKit
 
 
-class DumbProductListDataSource: ProductListDataSourceProtocol
+class DumbProductListDataSource: ArrayBasedDataSourceTemplate<ProductListTableViewCell, ProductListItemProtocol>, ProductListDataSourceProtocol
 {
-    required init(eventHandler: ProductItemCellEventHandlerProtocol) {
-        
+   
+    required init(items: [ProductListItemProtocol], eventHandler: ProductItemCellEventHandlerProtocol) {
+        super.init()
+        self.updateWith(array: items)
     }
     
-    func cell(for tableView: UITableView, at: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: ProductListTableViewCell.CellIdentifier)
+    override func cell(for tableView: UITableView, at: IndexPath) -> UITableViewCell {
+        let cell = super.cell(for: tableView, at: at)
         (cell as? ProductListTableViewCell)?.configure(item: DumbProductListItem())
-        return cell ?? UITableViewCell()
+        return cell
     }
-    
-    
-    
-    var count: Int
-    {
-        return 100
-    }
-    
-    
-    func registerCells(for tableView: UITableView) {
-        tableView.register(ProductListTableViewCell.NibCell, forCellReuseIdentifier: ProductListTableViewCell.CellIdentifier)
-    }
+
 }

@@ -14,5 +14,6 @@ protocol BaseTableDataSourceProtocol {
     var count: Int { get }
     func registerCells(for tableView: UITableView)
     func cell(for: UITableView, at:IndexPath) -> UITableViewCell
-        
+    
+    
 }

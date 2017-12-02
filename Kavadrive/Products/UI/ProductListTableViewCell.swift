@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProductListTableViewCell: UITableViewCell {
+class ProductListTableViewCell: UITableViewCell, BaseTableViewCellProtocol {
 
     @IBOutlet weak var name: UILabel!
     override func awakeFromNib() {
