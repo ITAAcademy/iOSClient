@@ -10,4 +10,11 @@ import Foundation
 
 protocol ProductListViewProtocol: class {
     var presenter: ProductListPresenterProtocol! { get set }
+    
+}
+
+
+protocol ProductListTableViewProtocol {
+    func set(dataSource: ProductListDataSourceProtocol)
+    var dataSource: ProductListDataSourceProtocol! { get set }
 }
