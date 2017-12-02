@@ -14,6 +14,16 @@
 		D995DD911FD32DC900838FFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D995DD8F1FD32DC900838FFF /* LaunchScreen.storyboard */; };
 		D995DD9C1FD32DC900838FFF /* KavadriveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DD9B1FD32DC900838FFF /* KavadriveTests.swift */; };
 		D995DDA71FD32DC900838FFF /* KavadriveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDA61FD32DC900838FFF /* KavadriveUITests.swift */; };
+		D995DDBD1FD32E8200838FFF /* iOSKavadriveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D995DDBA1FD32E6200838FFF /* iOSKavadriveSDK.framework */; };
+		D995DDBE1FD32E8200838FFF /* iOSKavadriveSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D995DDBA1FD32E6200838FFF /* iOSKavadriveSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D995DDC41FD32FA800838FFF /* ProductListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDC31FD32FA800838FFF /* ProductListPresenter.swift */; };
+		D995DDC61FD32FFA00838FFF /* ProductListViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDC51FD32FFA00838FFF /* ProductListViewProtocol.swift */; };
+		D995DDC81FD3306200838FFF /* ProductListPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDC71FD3306200838FFF /* ProductListPresenterProtocol.swift */; };
+		D995DDCA1FD3318800838FFF /* ProductListRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDC91FD3318800838FFF /* ProductListRouterProtocol.swift */; };
+		D995DDCC1FD3322700838FFF /* ProductListInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDCB1FD3322700838FFF /* ProductListInteractorProtocol.swift */; };
+		D995DDCE1FD3337100838FFF /* ProductListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDCD1FD3337100838FFF /* ProductListTableViewController.swift */; };
+		D995DDD01FD3342500838FFF /* ProductListModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDCF1FD3342500838FFF /* ProductListModuleBuilder.swift */; };
+		D995DDD21FD3349D00838FFF /* ProductList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D995DDD11FD3349D00838FFF /* ProductList.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +41,42 @@
 			remoteGlobalIDString = D995DD821FD32DC900838FFF;
 			remoteInfo = Kavadrive;
 		};
+		D995DDB91FD32E6200838FFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D995DDB41FD32E6200838FFF /* iOSKavadriveSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D995DD581FD32BBC00838FFF;
+			remoteInfo = iOSKavadriveSDK;
+		};
+		D995DDBB1FD32E6200838FFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D995DDB41FD32E6200838FFF /* iOSKavadriveSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D995DD611FD32BC000838FFF;
+			remoteInfo = iOSKavadriveSDKTests;
+		};
+		D995DDBF1FD32E8200838FFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D995DDB41FD32E6200838FFF /* iOSKavadriveSDK.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D995DD571FD32BBC00838FFF;
+			remoteInfo = iOSKavadriveSDK;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D995DDC11FD32E8200838FFF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D995DDBE1FD32E8200838FFF /* iOSKavadriveSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D995DD831FD32DC900838FFF /* Kavadrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kavadrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +92,15 @@
 		D995DDA21FD32DC900838FFF /* KavadriveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KavadriveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D995DDA61FD32DC900838FFF /* KavadriveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KavadriveUITests.swift; sourceTree = "<group>"; };
 		D995DDA81FD32DC900838FFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D995DDB41FD32E6200838FFF /* iOSKavadriveSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iOSKavadriveSDK.xcodeproj; path = iOSKavadriveSDK/iOSKavadriveSDK.xcodeproj; sourceTree = "<group>"; };
+		D995DDC31FD32FA800838FFF /* ProductListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListPresenter.swift; sourceTree = "<group>"; };
+		D995DDC51FD32FFA00838FFF /* ProductListViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewProtocol.swift; sourceTree = "<group>"; };
+		D995DDC71FD3306200838FFF /* ProductListPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListPresenterProtocol.swift; sourceTree = "<group>"; };
+		D995DDC91FD3318800838FFF /* ProductListRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListRouterProtocol.swift; sourceTree = "<group>"; };
+		D995DDCB1FD3322700838FFF /* ProductListInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListInteractorProtocol.swift; sourceTree = "<group>"; };
+		D995DDCD1FD3337100838FFF /* ProductListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListTableViewController.swift; sourceTree = "<group>"; };
+		D995DDCF1FD3342500838FFF /* ProductListModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListModuleBuilder.swift; sourceTree = "<group>"; };
+		D995DDD11FD3349D00838FFF /* ProductList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductList.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D995DDBD1FD32E8200838FFF /* iOSKavadriveSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +132,7 @@
 		D995DD7A1FD32DC900838FFF = {
 			isa = PBXGroup;
 			children = (
+				D995DDB41FD32E6200838FFF /* iOSKavadriveSDK.xcodeproj */,
 				D995DD851FD32DC900838FFF /* Kavadrive */,
 				D995DD9A1FD32DC900838FFF /* KavadriveTests */,
 				D995DDA51FD32DC900838FFF /* KavadriveUITests */,
@@ -97,6 +153,7 @@
 		D995DD851FD32DC900838FFF /* Kavadrive */ = {
 			isa = PBXGroup;
 			children = (
+				D995DDC21FD32F8600838FFF /* Products */,
 				D995DD861FD32DC900838FFF /* AppDelegate.swift */,
 				D995DD881FD32DC900838FFF /* ViewController.swift */,
 				D995DD8A1FD32DC900838FFF /* Main.storyboard */,
@@ -125,6 +182,38 @@
 			path = KavadriveUITests;
 			sourceTree = "<group>";
 		};
+		D995DDB51FD32E6200838FFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D995DDBA1FD32E6200838FFF /* iOSKavadriveSDK.framework */,
+				D995DDBC1FD32E6200838FFF /* iOSKavadriveSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D995DDC21FD32F8600838FFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D995DDC31FD32FA800838FFF /* ProductListPresenter.swift */,
+				D995DDD41FD336DE00838FFF /* Protocols */,
+				D995DDCD1FD3337100838FFF /* ProductListTableViewController.swift */,
+				D995DDCF1FD3342500838FFF /* ProductListModuleBuilder.swift */,
+				D995DDD11FD3349D00838FFF /* ProductList.storyboard */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		D995DDD41FD336DE00838FFF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D995DDC51FD32FFA00838FFF /* ProductListViewProtocol.swift */,
+				D995DDC71FD3306200838FFF /* ProductListPresenterProtocol.swift */,
+				D995DDC91FD3318800838FFF /* ProductListRouterProtocol.swift */,
+				D995DDCB1FD3322700838FFF /* ProductListInteractorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +224,12 @@
 				D995DD7F1FD32DC900838FFF /* Sources */,
 				D995DD801FD32DC900838FFF /* Frameworks */,
 				D995DD811FD32DC900838FFF /* Resources */,
+				D995DDC11FD32E8200838FFF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D995DDC01FD32E8200838FFF /* PBXTargetDependency */,
 			);
 			name = Kavadrive;
 			productName = Kavadrive;
@@ -218,6 +309,12 @@
 			mainGroup = D995DD7A1FD32DC900838FFF;
 			productRefGroup = D995DD841FD32DC900838FFF /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D995DDB51FD32E6200838FFF /* Products */;
+					ProjectRef = D995DDB41FD32E6200838FFF /* iOSKavadriveSDK.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D995DD821FD32DC900838FFF /* Kavadrive */,
@@ -227,6 +324,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		D995DDBA1FD32E6200838FFF /* iOSKavadriveSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = iOSKavadriveSDK.framework;
+			remoteRef = D995DDB91FD32E6200838FFF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D995DDBC1FD32E6200838FFF /* iOSKavadriveSDKTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = iOSKavadriveSDKTests.xctest;
+			remoteRef = D995DDBB1FD32E6200838FFF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		D995DD811FD32DC900838FFF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -234,6 +348,7 @@
 			files = (
 				D995DD911FD32DC900838FFF /* LaunchScreen.storyboard in Resources */,
 				D995DD8E1FD32DC900838FFF /* Assets.xcassets in Resources */,
+				D995DDD21FD3349D00838FFF /* ProductList.storyboard in Resources */,
 				D995DD8C1FD32DC900838FFF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +374,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D995DDC81FD3306200838FFF /* ProductListPresenterProtocol.swift in Sources */,
+				D995DDD01FD3342500838FFF /* ProductListModuleBuilder.swift in Sources */,
 				D995DD891FD32DC900838FFF /* ViewController.swift in Sources */,
+				D995DDC41FD32FA800838FFF /* ProductListPresenter.swift in Sources */,
+				D995DDCE1FD3337100838FFF /* ProductListTableViewController.swift in Sources */,
+				D995DDC61FD32FFA00838FFF /* ProductListViewProtocol.swift in Sources */,
+				D995DDCA1FD3318800838FFF /* ProductListRouterProtocol.swift in Sources */,
 				D995DD871FD32DC900838FFF /* AppDelegate.swift in Sources */,
+				D995DDCC1FD3322700838FFF /* ProductListInteractorProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +414,11 @@
 			isa = PBXTargetDependency;
 			target = D995DD821FD32DC900838FFF /* Kavadrive */;
 			targetProxy = D995DDA31FD32DC900838FFF /* PBXContainerItemProxy */;
+		};
+		D995DDC01FD32E8200838FFF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = iOSKavadriveSDK;
+			targetProxy = D995DDBF1FD32E8200838FFF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -425,10 +552,12 @@
 		D995DDAC1FD32DC900838FFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FEM5E9C5MW;
 				INFOPLIST_FILE = Kavadrive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ovt.Kavadrive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -440,10 +569,12 @@
 		D995DDAD1FD32DC900838FFF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FEM5E9C5MW;
 				INFOPLIST_FILE = Kavadrive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ovt.Kavadrive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
