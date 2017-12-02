@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct ProductListModuleBuilder
+struct ProductListModuleBuilder: ModuleBuilderProtocol
 {
     func buildView() -> UIViewController
     {
@@ -23,7 +23,8 @@ struct ProductListModuleBuilder
     private func setPresenter(controller: UIViewController)
     {
         guard let controller = controller as? ProductListViewProtocol else { return }
-        controller.presenter = nil
+        controller.presenter = ProductListPresenter()
+        controller.presenter.view = controller
     }
     
     

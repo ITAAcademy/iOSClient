@@ -9,11 +9,7 @@
 import Foundation
 import UIKit
 
-protocol ProductListDataSourceProtocol {
-    
-    var count: Int { get }
-    func registerCells(for tableView: UITableView)
-    func cell(for: UITableView, at:IndexPath) -> UITableViewCell
+protocol ProductListDataSourceProtocol: BaseTableDataSourceProtocol {
     
     init(eventHandler: ProductItemCellEventHandlerProtocol)
     

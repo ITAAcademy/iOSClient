@@ -8,11 +8,11 @@
 
 import UIKit
 
-class ProductListTableViewController: UITableViewController, ProductListViewProtocol, ProductListTableViewProtocol {
+class ProductListTableViewController: BaseTableViewController, ProductListViewProtocol {
+    
     
     
     var presenter: ProductListPresenterProtocol!
-    var dataSource: ProductListDataSourceProtocol!
     
     
     override func viewDidLoad() {
@@ -20,30 +20,8 @@ class ProductListTableViewController: UITableViewController, ProductListViewProt
         presenter.viewLoaded()
     }
 
-    func set(dataSource: ProductListDataSourceProtocol) {
-        self.dataSource = dataSource
-        self.dataSource.registerCells(for: tableView)
-    }
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return dataSource.count
-    }
-
-
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return dataSource.cell(for:tableView, at:indexPath)
-    }
 }
+
+
+

@@ -29,6 +29,14 @@
 		D995DDDA1FD33B5E00838FFF /* ProductListDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDD91FD33B5E00838FFF /* ProductListDataSourceProtocol.swift */; };
 		D995DDDC1FD33BF100838FFF /* ProductListItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDDB1FD33BF100838FFF /* ProductListItemProtocol.swift */; };
 		D995DDDE1FD342A700838FFF /* ProductItemCellEventHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDDD1FD342A700838FFF /* ProductItemCellEventHandlerProtocol.swift */; };
+		D995DDE11FD3484A00838FFF /* ModuleBuilderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDE01FD3484A00838FFF /* ModuleBuilderProtocol.swift */; };
+		D995DDE41FD34C5D00838FFF /* DumbProductItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDE31FD34C5D00838FFF /* DumbProductItem.swift */; };
+		D995DDE61FD34CAA00838FFF /* DumbProductListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDE51FD34CAA00838FFF /* DumbProductListDataSource.swift */; };
+		D995DDE81FD34CE400838FFF /* DumbProductItemCellEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDE71FD34CE400838FFF /* DumbProductItemCellEventHandler.swift */; };
+		D995DDEA1FD34E6B00838FFF /* BaseTableDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDE91FD34E6B00838FFF /* BaseTableDataSourceProtocol.swift */; };
+		D995DDEC1FD34F6000838FFF /* BaseTableViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDEB1FD34F6000838FFF /* BaseTableViewProtocol.swift */; };
+		D995DDEE1FD34FF600838FFF /* BasePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDED1FD34FF600838FFF /* BasePresenterProtocol.swift */; };
+		D995DDF01FD3510B00838FFF /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDEF1FD3510B00838FFF /* BaseTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +119,14 @@
 		D995DDD91FD33B5E00838FFF /* ProductListDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListDataSourceProtocol.swift; sourceTree = "<group>"; };
 		D995DDDB1FD33BF100838FFF /* ProductListItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListItemProtocol.swift; sourceTree = "<group>"; };
 		D995DDDD1FD342A700838FFF /* ProductItemCellEventHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemCellEventHandlerProtocol.swift; sourceTree = "<group>"; };
+		D995DDE01FD3484A00838FFF /* ModuleBuilderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilderProtocol.swift; sourceTree = "<group>"; };
+		D995DDE31FD34C5D00838FFF /* DumbProductItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DumbProductItem.swift; sourceTree = "<group>"; };
+		D995DDE51FD34CAA00838FFF /* DumbProductListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DumbProductListDataSource.swift; sourceTree = "<group>"; };
+		D995DDE71FD34CE400838FFF /* DumbProductItemCellEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DumbProductItemCellEventHandler.swift; sourceTree = "<group>"; };
+		D995DDE91FD34E6B00838FFF /* BaseTableDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableDataSourceProtocol.swift; sourceTree = "<group>"; };
+		D995DDEB1FD34F6000838FFF /* BaseTableViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewProtocol.swift; sourceTree = "<group>"; };
+		D995DDED1FD34FF600838FFF /* BasePresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenterProtocol.swift; sourceTree = "<group>"; };
+		D995DDEF1FD3510B00838FFF /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +179,8 @@
 		D995DD851FD32DC900838FFF /* Kavadrive */ = {
 			isa = PBXGroup;
 			children = (
+				D995DDF11FD3512500838FFF /* BaseClasses */,
+				D995DDDF1FD3482600838FFF /* Protocols */,
 				D995DDC21FD32F8600838FFF /* Products */,
 				D995DD861FD32DC900838FFF /* AppDelegate.swift */,
 				D995DD881FD32DC900838FFF /* ViewController.swift */,
@@ -204,6 +222,7 @@
 		D995DDC21FD32F8600838FFF /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				D995DDE21FD34C3800838FFF /* DumbClasses */,
 				D995DDC31FD32FA800838FFF /* ProductListPresenter.swift */,
 				D995DDD41FD336DE00838FFF /* Protocols */,
 				D995DDCD1FD3337100838FFF /* ProductListTableViewController.swift */,
@@ -227,6 +246,35 @@
 				D995DDDD1FD342A700838FFF /* ProductItemCellEventHandlerProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D995DDDF1FD3482600838FFF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D995DDE01FD3484A00838FFF /* ModuleBuilderProtocol.swift */,
+				D995DDE91FD34E6B00838FFF /* BaseTableDataSourceProtocol.swift */,
+				D995DDEB1FD34F6000838FFF /* BaseTableViewProtocol.swift */,
+				D995DDED1FD34FF600838FFF /* BasePresenterProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D995DDE21FD34C3800838FFF /* DumbClasses */ = {
+			isa = PBXGroup;
+			children = (
+				D995DDE31FD34C5D00838FFF /* DumbProductItem.swift */,
+				D995DDE51FD34CAA00838FFF /* DumbProductListDataSource.swift */,
+				D995DDE71FD34CE400838FFF /* DumbProductItemCellEventHandler.swift */,
+			);
+			path = DumbClasses;
+			sourceTree = "<group>";
+		};
+		D995DDF11FD3512500838FFF /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				D995DDEF1FD3510B00838FFF /* BaseTableViewController.swift */,
+			);
+			path = BaseClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,17 +438,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D995DDEC1FD34F6000838FFF /* BaseTableViewProtocol.swift in Sources */,
+				D995DDEA1FD34E6B00838FFF /* BaseTableDataSourceProtocol.swift in Sources */,
 				D995DDC81FD3306200838FFF /* ProductListPresenterProtocol.swift in Sources */,
+				D995DDF01FD3510B00838FFF /* BaseTableViewController.swift in Sources */,
 				D995DDDA1FD33B5E00838FFF /* ProductListDataSourceProtocol.swift in Sources */,
 				D995DDD01FD3342500838FFF /* ProductListModuleBuilder.swift in Sources */,
 				D995DD891FD32DC900838FFF /* ViewController.swift in Sources */,
 				D995DDC41FD32FA800838FFF /* ProductListPresenter.swift in Sources */,
 				D995DDCE1FD3337100838FFF /* ProductListTableViewController.swift in Sources */,
 				D995DDDE1FD342A700838FFF /* ProductItemCellEventHandlerProtocol.swift in Sources */,
+				D995DDE41FD34C5D00838FFF /* DumbProductItem.swift in Sources */,
+				D995DDE11FD3484A00838FFF /* ModuleBuilderProtocol.swift in Sources */,
 				D995DDDC1FD33BF100838FFF /* ProductListItemProtocol.swift in Sources */,
+				D995DDE61FD34CAA00838FFF /* DumbProductListDataSource.swift in Sources */,
 				D995DDC61FD32FFA00838FFF /* ProductListViewProtocol.swift in Sources */,
 				D995DDCA1FD3318800838FFF /* ProductListRouterProtocol.swift in Sources */,
+				D995DDEE1FD34FF600838FFF /* BasePresenterProtocol.swift in Sources */,
 				D995DDD71FD33A8F00838FFF /* ProductListTableViewCell.swift in Sources */,
+				D995DDE81FD34CE400838FFF /* DumbProductItemCellEventHandler.swift in Sources */,
 				D995DD871FD32DC900838FFF /* AppDelegate.swift in Sources */,
 				D995DDCC1FD3322700838FFF /* ProductListInteractorProtocol.swift in Sources */,
 			);

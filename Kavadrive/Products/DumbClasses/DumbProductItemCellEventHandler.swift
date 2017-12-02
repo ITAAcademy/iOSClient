@@ -1,5 +1,5 @@
 //
-//  ProductListViewProtocol.swift
+//  DumbProductItemCellEventHandler.swift
 //  Kavadrive
 //
 //  Created by Aleksey Tyurenkov on 12/2/17.
@@ -8,10 +8,7 @@
 
 import Foundation
 
-protocol ProductListViewProtocol: class {
-    var presenter: ProductListPresenterProtocol! { get set }
+struct DumbProductItemCellEventHandler: ProductItemCellEventHandlerProtocol
+{
     
 }
-
-
-

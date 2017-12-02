@@ -10,6 +10,7 @@ import UIKit
 
 class ProductListTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var name: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,7 +25,7 @@ class ProductListTableViewCell: UITableViewCell {
     
     static var CellIdentifier: String
     {
-        return String(describing: type(of: self))
+        return "ProductListTableViewCell"
     }
     
     static var NibCell: UINib
@@ -38,6 +39,6 @@ extension ProductListTableViewCell
 {
     func configure(item: ProductListItemProtocol)
     {
-        
+        name.text = item.name
     }
 }
