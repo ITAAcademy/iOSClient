@@ -9,7 +9,14 @@
 import Foundation
 
 
-struct Product
+public protocol ProductProtocol
 {
-    
+    var name: String { get }
 }
+
+public struct DumbProduct: ProductProtocol
+{
+    public var name: String { return "Dumb Name" }
+}
+
+

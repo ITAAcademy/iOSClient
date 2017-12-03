@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 
 class FirstScreenPresenter: FirstScreenPresenterProtocol {
+
+    
     var interactor: FirstScreenInteractorProtocol!
     var router: FirstScreenRouterProtocol!
     weak var view: FirstScreenViewProtocol!
@@ -28,21 +30,20 @@ class FirstScreenPresenter: FirstScreenPresenterProtocol {
         view.isUpperHidden = true
         view.showBottom(controller: router.getLoadingScreen())
         view.showUpper(controller: UIViewController())
-        interactor.getProductList { [weak self](items) in
-            if let controller = self?.router?.getProductListController(with: items)
-            {
-                DispatchQueue.main.async {
-                    self?.view?.showBottom(controller: controller)
-                }
-                
-            }
-            
-        }
+        interactor.getProductList()
     }
     
     
     
-    
+    func show(products: [ProductListItemProtocol]) {
+        if let controller = router?.getProductListController(with: products)
+        {
+            DispatchQueue.main.async { [weak self] in
+                self?.view?.showBottom(controller: controller)
+            }
+            
+        }
+    }
     
     
 }

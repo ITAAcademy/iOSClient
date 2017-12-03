@@ -11,7 +11,5 @@ import Foundation
 
 protocol FirstScreenInteractorProtocol: class {
     var presenter: FirstScreenPresenterProtocol! { get set }
-    
-    func getProductList(completion: @escaping ([ProductListItemProtocol])->())
-
+    func getProductList()
 }

@@ -9,10 +9,29 @@
 import Foundation
 
 
-class ProductDataProvider
+public class ProductDataProvider
 {
-    func get(completion: ([Product])->())
+    
+    
+    private class DumbProductsGenerator
     {
-        
+        class func generate(count: UInt) -> [ProductProtocol]
+        {
+            return (0..<count).map({ (index) -> ProductProtocol in
+                return DumbProduct()
+            })
+        }
     }
+    
+    public func get(completion: @escaping ([ProductProtocol])->(), error: (Error)->())
+    {
+        DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + 10 ) {
+            completion(DumbProductsGenerator.generate(count: 100))
+        }
+    }
+    
+    
+    public init()
+    {}
+    
 }

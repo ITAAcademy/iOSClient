@@ -7,30 +7,32 @@
 //
 
 import Foundation
+import iOSKavadriveSDK
+
+class SimpleProductListItem: ProductListItemProtocol
+{
+    var name: String
+    
+    init(product: ProductProtocol)
+    {
+        name = product.name
+    }
+}
 
 
 class FirstScreenInteractor: FirstScreenInteractorProtocol {
-    weak var presenter: FirstScreenPresenterProtocol!
-    
-    
-    private class DumbListGenerator
-    {
-        class func generate(count: UInt) -> [ProductListItemProtocol]
-        {
-            return (0..<count).map({ (index) -> ProductListItemProtocol in
-                return DumbProductListItem()
-            })
-        }
-    }
-    
 
     
+    weak var presenter: FirstScreenPresenterProtocol!
     
-    func getProductList(completion: @escaping ([ProductListItemProtocol]) -> ()) {
-        DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + 10 ) {
-            completion(DumbListGenerator.generate(count: 100))
+    func getProductList() {
+        let provider = ProductDataProvider()
+        provider.get(completion: { (products) in
+            self.presenter.show(products: products.map{SimpleProductListItem.init(product: $0)})
+        }) { (error) in
+            
         }
     }
-    
+
     
 }

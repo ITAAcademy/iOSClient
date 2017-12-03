@@ -324,15 +324,23 @@
 				D995DDFD1FD3671500838FFF /* FirstScreenModuleBuilder.swift */,
 				D995DDFF1FD367D100838FFF /* FirstScreenViewController.swift */,
 				D995DE011FD3682B00838FFF /* FirstScreen.storyboard */,
-				D995DE041FD36CA200838FFF /* FirstScreenPresenterProtocol.swift */,
-				D995DE061FD36CF800838FFF /* FirstScreenViewProtocol.swift */,
+				D995DE141FD3E7DC00838FFF /* Protocols */,
 				D995DE081FD36D6800838FFF /* FirstScreenPresenter.swift */,
-				D995DE0C1FD36F7200838FFF /* FirstScreenRouterProtocol.swift */,
 				D995DE0E1FD36FA300838FFF /* FirstScreenRouter.swift */,
-				D995DE101FD372A900838FFF /* FirstScreenInteractorProtocol.swift */,
 				D995DE121FD3731C00838FFF /* FirstScreenInteractor.swift */,
 			);
 			path = FirstScreen;
+			sourceTree = "<group>";
+		};
+		D995DE141FD3E7DC00838FFF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D995DE041FD36CA200838FFF /* FirstScreenPresenterProtocol.swift */,
+				D995DE061FD36CF800838FFF /* FirstScreenViewProtocol.swift */,
+				D995DE0C1FD36F7200838FFF /* FirstScreenRouterProtocol.swift */,
+				D995DE101FD372A900838FFF /* FirstScreenInteractorProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

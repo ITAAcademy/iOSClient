@@ -15,4 +15,5 @@ protocol FirstScreenPresenterProtocol: class {
     var interactor: FirstScreenInteractorProtocol! { get set }
     
     func viewLoaded()
+    func show(products:[ProductListItemProtocol])
 }
