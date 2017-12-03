@@ -26,7 +26,7 @@ class FirstScreenPresenter: FirstScreenPresenterProtocol {
     
     func viewLoaded() {
         view.isUpperHidden = true
-        view.showBottom(controller: UIViewController())
+        view.showBottom(controller: router.getLoadingScreen())
         view.showUpper(controller: UIViewController())
         interactor.getProductList { [weak self](items) in
             if let controller = self?.router?.getProductListController(with: items)

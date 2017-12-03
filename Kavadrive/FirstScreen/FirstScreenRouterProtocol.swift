@@ -13,4 +13,5 @@ protocol FirstScreenRouterProtocol: class {
     var presenter: FirstScreenPresenterProtocol! { get set }
     
     func getProductListController(with: [ProductListItemProtocol]) -> UIViewController
+    func getLoadingScreen() -> UIViewController
 }

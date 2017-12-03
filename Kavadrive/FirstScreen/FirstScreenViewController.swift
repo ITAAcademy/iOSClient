@@ -55,7 +55,7 @@ class FirstScreenViewController: UIViewController, FirstScreenViewProtocol {
     private func showController(controller: UIViewController, inView: UIView)
     {
         self.addChildViewController(controller)
-        controller.view.frame = view.frame
+        controller.view.frame = inView.bounds
         inView.addSubview(controller.view)
         controller.didMove(toParentViewController: self)
     }
