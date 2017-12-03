@@ -34,8 +34,15 @@ class ProductListPresenter: ProductListPresenterProtocol, EmbeddedPresenterProto
     }
 
     func viewDidScroll(offset: Float) {
-        guard viewScrollThreshhold > 0 && offset > viewScrollThreshhold else { return }
-        delegate?.addSpace(for: self)
+        guard viewScrollThreshhold > 0  else { return }
+        if offset > 0 && offset > viewScrollThreshhold
+        {
+            delegate?.addSpace(for: self)
+        }
+        else if offset < 0
+        {
+            delegate?.shrink(presenter: self)
+        }
     }
     
     

@@ -17,7 +17,7 @@ struct ProductListModuleBuilder: ModuleBuilderProtocol
 
     
     private var items: [ProductListItemProtocol] = []
-    
+    private var embeddedControllerDelegate: EmbeddedPresenterDelegate?
     
     
     func buildView() -> UIViewController
@@ -33,6 +33,11 @@ struct ProductListModuleBuilder: ModuleBuilderProtocol
         self.items = items
     }
     
+    mutating func setEmbeddedController(delegate: EmbeddedPresenterDelegate)
+    {
+        embeddedControllerDelegate = delegate
+    }
+    
     private func configure(controller: UIViewController)
     {
         guard let controller = controller as? ProductListViewProtocol else { return }
@@ -40,6 +45,10 @@ struct ProductListModuleBuilder: ModuleBuilderProtocol
         controller.presenter.view = controller
         controller.presenter.interactor = ProductListInteractor()
         controller.presenter.interactor.presenter = controller.presenter
+        if let presenter = controller.presenter as? EmbeddedPresenterProtocol
+        {
+            presenter.delegate = embeddedControllerDelegate
+        }
     }
     
     

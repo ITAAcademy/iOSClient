@@ -27,6 +27,10 @@ class FirstScreenRouter: FirstScreenRouterProtocol {
     func getProductListController(with items: [ProductListItemProtocol])->UIViewController  {
         var builder = ProductListModuleBuilder()
         builder.set(items: items)
+        if let delegate = presenter as? EmbeddedPresenterDelegate
+        {
+            builder.setEmbeddedController(delegate: delegate)
+        }
         return builder.buildView()
     }
     
@@ -37,3 +41,5 @@ class FirstScreenRouter: FirstScreenRouterProtocol {
     
     
 }
+
+

@@ -9,7 +9,7 @@
 import Foundation
 
 
-protocol EmbeddedPresenterProtocol
+protocol EmbeddedPresenterProtocol: class
 {
     var delegate: EmbeddedPresenterDelegate? { get set }
 }

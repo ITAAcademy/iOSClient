@@ -19,15 +19,29 @@ class ProductListTableViewController: BaseTableViewController, ProductListViewPr
         presenter.viewLoaded()
     }
     
-    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let delta = Float(scrollView.contentOffset.y - lastOffset)
-        presenter.viewDidScroll(offset: delta)
-        lastOffset = scrollView.contentOffset.y
-    }
     
     var scrollThresholdPreffered: Float
     {
         return Float(view.bounds.maxY / 10)
+    }
+    
+    override func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let delta = Float(scrollView.contentOffset.y - lastOffset)
+        lastOffset = scrollView.contentOffset.y
+        if delta > 0
+        {
+            presenter.viewDidScroll(offset: delta)
+        }
+    }
+    
+    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let delta = Float(scrollView.contentOffset.y - lastOffset)
+        if delta < 0
+        {
+            presenter.viewDidScroll(offset: delta)
+            lastOffset = scrollView.contentOffset.y
+        }
+        
     }
     
 }

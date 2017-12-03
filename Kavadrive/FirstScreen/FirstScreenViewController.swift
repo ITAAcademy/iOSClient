@@ -62,14 +62,20 @@ class FirstScreenViewController: UIViewController, FirstScreenViewProtocol {
     
     var isUpperHidden: Bool = true {
         didSet {
+            var constant = localCheckoutHeight.constant
             if isUpperHidden
             {
-                localCheckoutHeight.constant = 0
+                constant = 0
             }
             else
             {
-                localCheckoutHeight.constant = 128
+                constant = 128
             }
+            self.localCheckoutHeight.constant = constant
+            UIView.animate(withDuration: 0.25) {
+                self.view.layoutIfNeeded()
+            }
+            
         }
     }
 
