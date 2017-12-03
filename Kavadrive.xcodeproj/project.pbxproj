@@ -41,6 +41,17 @@
 		D995DDF81FD357E100838FFF /* BaseTableViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDF71FD357E100838FFF /* BaseTableViewCellProtocol.swift */; };
 		D995DDFA1FD358E000838FFF /* ArrayBasedDataSourceTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDF91FD358E000838FFF /* ArrayBasedDataSourceTemplate.swift */; };
 		D995DDFC1FD3590A00838FFF /* ArrayBasedDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDFB1FD3590A00838FFF /* ArrayBasedDataSourceProtocol.swift */; };
+		D995DDFE1FD3671500838FFF /* FirstScreenModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDFD1FD3671500838FFF /* FirstScreenModuleBuilder.swift */; };
+		D995DE001FD367D100838FFF /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DDFF1FD367D100838FFF /* FirstScreenViewController.swift */; };
+		D995DE021FD3682B00838FFF /* FirstScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D995DE011FD3682B00838FFF /* FirstScreen.storyboard */; };
+		D995DE051FD36CA200838FFF /* FirstScreenPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DE041FD36CA200838FFF /* FirstScreenPresenterProtocol.swift */; };
+		D995DE071FD36CF800838FFF /* FirstScreenViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DE061FD36CF800838FFF /* FirstScreenViewProtocol.swift */; };
+		D995DE091FD36D6800838FFF /* FirstScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DE081FD36D6800838FFF /* FirstScreenPresenter.swift */; };
+		D995DE0B1FD36E2300838FFF /* FirstScreenStates.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DE0A1FD36E2300838FFF /* FirstScreenStates.swift */; };
+		D995DE0D1FD36F7200838FFF /* FirstScreenRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DE0C1FD36F7200838FFF /* FirstScreenRouterProtocol.swift */; };
+		D995DE0F1FD36FA300838FFF /* FirstScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DE0E1FD36FA300838FFF /* FirstScreenRouter.swift */; };
+		D995DE111FD372A900838FFF /* FirstScreenInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DE101FD372A900838FFF /* FirstScreenInteractorProtocol.swift */; };
+		D995DE131FD3731C00838FFF /* FirstScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DE121FD3731C00838FFF /* FirstScreenInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +146,17 @@
 		D995DDF71FD357E100838FFF /* BaseTableViewCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCellProtocol.swift; sourceTree = "<group>"; };
 		D995DDF91FD358E000838FFF /* ArrayBasedDataSourceTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayBasedDataSourceTemplate.swift; sourceTree = "<group>"; };
 		D995DDFB1FD3590A00838FFF /* ArrayBasedDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayBasedDataSourceProtocol.swift; sourceTree = "<group>"; };
+		D995DDFD1FD3671500838FFF /* FirstScreenModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenModuleBuilder.swift; sourceTree = "<group>"; };
+		D995DDFF1FD367D100838FFF /* FirstScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
+		D995DE011FD3682B00838FFF /* FirstScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstScreen.storyboard; sourceTree = "<group>"; };
+		D995DE041FD36CA200838FFF /* FirstScreenPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenPresenterProtocol.swift; sourceTree = "<group>"; };
+		D995DE061FD36CF800838FFF /* FirstScreenViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenViewProtocol.swift; sourceTree = "<group>"; };
+		D995DE081FD36D6800838FFF /* FirstScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenPresenter.swift; sourceTree = "<group>"; };
+		D995DE0A1FD36E2300838FFF /* FirstScreenStates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenStates.swift; sourceTree = "<group>"; };
+		D995DE0C1FD36F7200838FFF /* FirstScreenRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenRouterProtocol.swift; sourceTree = "<group>"; };
+		D995DE0E1FD36FA300838FFF /* FirstScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenRouter.swift; sourceTree = "<group>"; };
+		D995DE101FD372A900838FFF /* FirstScreenInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenInteractorProtocol.swift; sourceTree = "<group>"; };
+		D995DE121FD3731C00838FFF /* FirstScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreenInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +213,7 @@
 				D995DDDF1FD3482600838FFF /* Protocols */,
 				D995DDC21FD32F8600838FFF /* Products */,
 				D995DD861FD32DC900838FFF /* AppDelegate.swift */,
+				D995DE031FD36A5100838FFF /* FirstScreen */,
 				D995DD881FD32DC900838FFF /* ViewController.swift */,
 				D995DD8A1FD32DC900838FFF /* Main.storyboard */,
 				D995DD8D1FD32DC900838FFF /* Assets.xcassets */,
@@ -295,6 +318,24 @@
 				D995DDD61FD33A8F00838FFF /* ProductListTableViewCell.xib */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		D995DE031FD36A5100838FFF /* FirstScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D995DDFD1FD3671500838FFF /* FirstScreenModuleBuilder.swift */,
+				D995DDFF1FD367D100838FFF /* FirstScreenViewController.swift */,
+				D995DE011FD3682B00838FFF /* FirstScreen.storyboard */,
+				D995DE041FD36CA200838FFF /* FirstScreenPresenterProtocol.swift */,
+				D995DE061FD36CF800838FFF /* FirstScreenViewProtocol.swift */,
+				D995DE081FD36D6800838FFF /* FirstScreenPresenter.swift */,
+				D995DE0A1FD36E2300838FFF /* FirstScreenStates.swift */,
+				D995DE0C1FD36F7200838FFF /* FirstScreenRouterProtocol.swift */,
+				D995DE0E1FD36FA300838FFF /* FirstScreenRouter.swift */,
+				D995DE101FD372A900838FFF /* FirstScreenInteractorProtocol.swift */,
+				D995DE121FD3731C00838FFF /* FirstScreenInteractor.swift */,
+			);
+			path = FirstScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -434,6 +475,7 @@
 				D995DD8E1FD32DC900838FFF /* Assets.xcassets in Resources */,
 				D995DDD21FD3349D00838FFF /* ProductList.storyboard in Resources */,
 				D995DD8C1FD32DC900838FFF /* Main.storyboard in Resources */,
+				D995DE021FD3682B00838FFF /* FirstScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,11 +502,14 @@
 			files = (
 				D995DDEC1FD34F6000838FFF /* BaseTableViewProtocol.swift in Sources */,
 				D995DDEA1FD34E6B00838FFF /* BaseTableDataSourceProtocol.swift in Sources */,
+				D995DE0F1FD36FA300838FFF /* FirstScreenRouter.swift in Sources */,
 				D995DDFA1FD358E000838FFF /* ArrayBasedDataSourceTemplate.swift in Sources */,
 				D995DDC81FD3306200838FFF /* ProductListPresenterProtocol.swift in Sources */,
 				D995DDF01FD3510B00838FFF /* BaseTableViewController.swift in Sources */,
 				D995DDDA1FD33B5E00838FFF /* ProductListDataSourceProtocol.swift in Sources */,
 				D995DDD01FD3342500838FFF /* ProductListModuleBuilder.swift in Sources */,
+				D995DE091FD36D6800838FFF /* FirstScreenPresenter.swift in Sources */,
+				D995DE051FD36CA200838FFF /* FirstScreenPresenterProtocol.swift in Sources */,
 				D995DD891FD32DC900838FFF /* ViewController.swift in Sources */,
 				D995DDC41FD32FA800838FFF /* ProductListPresenter.swift in Sources */,
 				D995DDCE1FD3337100838FFF /* ProductListTableViewController.swift in Sources */,
@@ -474,15 +519,22 @@
 				D995DDE11FD3484A00838FFF /* ModuleBuilderProtocol.swift in Sources */,
 				D995DDFC1FD3590A00838FFF /* ArrayBasedDataSourceProtocol.swift in Sources */,
 				D995DDDC1FD33BF100838FFF /* ProductListItemProtocol.swift in Sources */,
+				D995DE001FD367D100838FFF /* FirstScreenViewController.swift in Sources */,
 				D995DDE61FD34CAA00838FFF /* ProductListDataSource.swift in Sources */,
 				D995DDC61FD32FFA00838FFF /* ProductListViewProtocol.swift in Sources */,
+				D995DE0D1FD36F7200838FFF /* FirstScreenRouterProtocol.swift in Sources */,
 				D995DDCA1FD3318800838FFF /* ProductListRouterProtocol.swift in Sources */,
 				D995DDF51FD3543900838FFF /* ProductListInteractor.swift in Sources */,
+				D995DDFE1FD3671500838FFF /* FirstScreenModuleBuilder.swift in Sources */,
 				D995DDEE1FD34FF600838FFF /* BasePresenterProtocol.swift in Sources */,
+				D995DE111FD372A900838FFF /* FirstScreenInteractorProtocol.swift in Sources */,
+				D995DE071FD36CF800838FFF /* FirstScreenViewProtocol.swift in Sources */,
 				D995DDD71FD33A8F00838FFF /* ProductListTableViewCell.swift in Sources */,
 				D995DDE81FD34CE400838FFF /* DumbProductItemCellEventHandler.swift in Sources */,
 				D995DD871FD32DC900838FFF /* AppDelegate.swift in Sources */,
 				D995DDCC1FD3322700838FFF /* ProductListInteractorProtocol.swift in Sources */,
+				D995DE0B1FD36E2300838FFF /* FirstScreenStates.swift in Sources */,
+				D995DE131FD3731C00838FFF /* FirstScreenInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

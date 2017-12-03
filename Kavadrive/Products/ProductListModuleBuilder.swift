@@ -14,17 +14,9 @@ import UIKit
 
 struct ProductListModuleBuilder: ModuleBuilderProtocol
 {
-    private class DumbListGenerator
-    {
-        class func generate(count: UInt) -> [ProductListItemProtocol]
-        {
-            return (0..<count).map({ (index) -> ProductListItemProtocol in
-                return DumbProductListItem()
-            })
-        }
-    }
+
     
-    private var items: [ProductListItemProtocol] = DumbListGenerator.generate(count: 100)
+    private var items: [ProductListItemProtocol] = []
     
     
     
@@ -33,7 +25,7 @@ struct ProductListModuleBuilder: ModuleBuilderProtocol
         let storyboard = UIStoryboard(name: "ProductList", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "ProductListTableViewController")
         configure(controller: controller)
-        return UINavigationController(rootViewController: controller)
+        return controller
     }
     
     mutating func set(items:[ProductListItemProtocol])
