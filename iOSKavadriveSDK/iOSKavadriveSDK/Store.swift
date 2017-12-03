@@ -9,7 +9,12 @@
 import Foundation
 
 
-struct Store
+public protocol StoreProtocol
 {
-    
+    var storeName: String { get }
+}
+
+public struct DumbStore: StoreProtocol
+{
+    public var storeName: String { return "Dumb StoreName" }
 }

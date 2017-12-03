@@ -11,8 +11,21 @@ import Foundation
 
 class StoresDataProvider
 {
-    func getStores(completion: ([Store])->())
+
+    private class DumbStoreGenerator
     {
-        
+        class func generate(count: UInt) -> [StoreProtocol]
+        {
+            return(0..<count).map({ (index) -> StoreProtocol in
+                return DumbStore()
+            })
+        }
+    }
+    
+    public func get(completion: @escaping ([StoreProtocol])->(), error: (Error)->())
+    {
+        DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + 10 ) {
+            completion(DumbStoreGenerator.generate(count: 20))
+        }
     }
 }

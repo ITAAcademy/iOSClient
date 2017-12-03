@@ -29,7 +29,7 @@ public class ProductDataProvider
             completion(DumbProductsGenerator.generate(count: 100))
         }
     }
-    
+
     
     public init()
     {}
