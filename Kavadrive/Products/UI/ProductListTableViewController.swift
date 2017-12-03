@@ -26,15 +26,28 @@ class ProductListTableViewController: BaseTableViewController, ProductListViewPr
     }
     
     override func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        guard (self.tableView.contentOffset.y < (self.tableView.contentSize.height - self.tableView.bounds.size.height))
+        else {
+            lastOffset = scrollView.contentOffset.y
+            //bouncing
+            return
+        }
+        
         let delta = Float(scrollView.contentOffset.y - lastOffset)
         lastOffset = scrollView.contentOffset.y
         if delta > 0
         {
             presenter.viewDidScroll(offset: delta)
         }
+
     }
     
     override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        guard (self.tableView.contentOffset.y < (self.tableView.contentSize.height - self.tableView.bounds.size.height))
+            else {
+                //bouncing
+                return
+        }
         let delta = Float(scrollView.contentOffset.y - lastOffset)
         if delta < 0
         {

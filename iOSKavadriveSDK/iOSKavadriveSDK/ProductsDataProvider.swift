@@ -26,7 +26,7 @@ public class ProductDataProvider
     public func get(completion: @escaping ([ProductProtocol])->(), error: (Error)->())
     {
         DispatchQueue.global(qos: .userInitiated).asyncAfter(deadline: .now() + 10 ) {
-            completion(DumbProductsGenerator.generate(count: 100))
+            completion(DumbProductsGenerator.generate(count: 15))
         }
     }
     

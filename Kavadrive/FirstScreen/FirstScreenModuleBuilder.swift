@@ -17,7 +17,7 @@ class FirstScreenModuleBuilder: ModuleBuilderProtocol
         let storyboard = UIStoryboard(name: "FirstScreen", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "FirstScreenViewController")
         configure(controller: controller)
-        return UINavigationController(rootViewController: controller)
+        return controller
     }
     
     private func configure(controller: UIViewController)
