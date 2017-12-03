@@ -8,11 +8,13 @@
 
 import Foundation
 
-
 protocol ProductListPresenterProtocol: class {
     var view: ProductListViewProtocol! { get set }
     var router: ProductListRouterProtocol! { get set }
     var interactor: ProductListInteractorProtocol! { get set}
     
+    
+    
     func viewLoaded()
+    func viewDidScroll(offset: Float)
 }

@@ -11,6 +11,7 @@ import Foundation
 protocol ProductListViewProtocol: class {
     var presenter: ProductListPresenterProtocol! { get set }
     
+    var scrollThresholdPreffered: Float { get }
 }
 
 

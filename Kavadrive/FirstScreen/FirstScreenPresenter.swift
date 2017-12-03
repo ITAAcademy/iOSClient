@@ -27,9 +27,9 @@ class FirstScreenPresenter: FirstScreenPresenterProtocol {
     
     
     func viewLoaded() {
-        view.isUpperHidden = true
+        view.isUpperHidden = false
         view.showBottom(controller: router.getLoadingScreen())
-        view.showUpper(controller: UIViewController())
+        view.showUpper(controller: router.getCheckout())
         interactor.getProductList()
     }
     
@@ -43,6 +43,20 @@ class FirstScreenPresenter: FirstScreenPresenterProtocol {
             }
             
         }
+    }
+    
+    
+}
+
+
+extension FirstScreenPresenter: EmbeddedPresenterDelegate
+{
+    func addSpace(for presenter: EmbeddedPresenterProtocol) {
+        view.isUpperHidden = true
+    }
+    
+    func shrink(presenter: EmbeddedPresenterProtocol) {
+        view.isUpperHidden = false
     }
     
     

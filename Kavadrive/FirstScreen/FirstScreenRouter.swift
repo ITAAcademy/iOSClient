@@ -10,6 +10,13 @@ import Foundation
 import UIKit
 
 class FirstScreenRouter: FirstScreenRouterProtocol {
+    func getCheckout() -> UIViewController {
+        let builder = SmallCheckoutModuleBuilder()
+        return builder.buildView()
+    }
+    
+
+    
     func getLoadingScreen() -> UIViewController {
         let storyboard = UIStoryboard(name: "FirstScreen", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "LoadingScreen")

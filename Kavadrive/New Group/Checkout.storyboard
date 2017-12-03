@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SmallCheckoutStubController-->
+        <scene sceneID="FIc-5E-mbQ">
+            <objects>
+                <viewController storyboardIdentifier="SmallCheckoutStubController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Fov-9Z-Kix" userLabel="SmallCheckoutStubController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uyP-LN-Ky7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Controller hasn't been implemented yet " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EpM-AS-Uls">
+                                <rect key="frame" x="94" y="323" width="188" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.25717592589999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="EpM-AS-Uls" firstAttribute="centerY" secondItem="aZe-Pc-QHI" secondAttribute="centerY" id="KRn-5v-JxS"/>
+                            <constraint firstItem="EpM-AS-Uls" firstAttribute="width" secondItem="uyP-LN-Ky7" secondAttribute="width" multiplier="1:2" id="Swm-AW-xRQ"/>
+                            <constraint firstItem="EpM-AS-Uls" firstAttribute="centerX" secondItem="aZe-Pc-QHI" secondAttribute="centerX" id="dky-n8-99J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aZe-Pc-QHI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hGG-C4-3EJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.59999999999999" y="146.17691154422789"/>
+        </scene>
+    </scenes>
+</document>

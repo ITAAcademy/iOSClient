@@ -14,4 +14,5 @@ protocol FirstScreenRouterProtocol: class {
     
     func getProductListController(with: [ProductListItemProtocol]) -> UIViewController
     func getLoadingScreen() -> UIViewController
+    func getCheckout()->UIViewController
 }
