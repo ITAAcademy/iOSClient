@@ -15,7 +15,7 @@ public protocol ProductProtocol
     var name: String { get }
     var amount: Int { get }
     var price: Double { get }
-    var image: URL { get }
+    var image: URL? { get }
     var typeId: Int { get }
     var typeName: String { get }
     var categoryId: Int { get }
@@ -27,11 +27,11 @@ public protocol ProductProtocol
 
 public struct DumbProduct: ProductProtocol
 {
-    public var image: URL
+    public var image: URL?
 
     public var descriprion: String { return "Dumb Description" }
     
-    public var links: [URL]
+    public var links: [URL] = []
     
     public var id: Int { return 1 }
     

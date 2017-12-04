@@ -17,9 +17,9 @@ public class ProductDataProvider
     {
         class func generate(count: UInt) -> [ProductProtocol]
         {
-            return (0..<count).map({ (index) -> ProductProtocol in
+            return (0..<count).map { (index) -> ProductProtocol in
                 return DumbProduct()
-            })
+            }
         }
     }
     
