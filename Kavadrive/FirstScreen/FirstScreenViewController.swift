@@ -62,6 +62,7 @@ class FirstScreenViewController: UIViewController, FirstScreenViewProtocol {
     
     var isUpperHidden: Bool = true {
         didSet {
+            guard isUpperHidden != oldValue else { return }
             var constant = localCheckoutHeight.constant
             if isUpperHidden
             {

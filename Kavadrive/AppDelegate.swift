@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     lazy var firstBuilder:ModuleBuilderProtocol = {
-        return FirstScreenModuleBuilder()
+        return MainModuleBuilder()
     }()
     var window: UIWindow?
 
