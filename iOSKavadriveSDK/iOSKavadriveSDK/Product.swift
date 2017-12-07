@@ -54,7 +54,7 @@ public struct DumbProduct: ProductProtocol
 }
 
 
-func readJson() {
+func readJsonFromFile() {
     do {
         if let file = Bundle.main.url(forResource: "ProductsAPI_JSON_example", withExtension: "json") {
             let data = try Data(contentsOf: file)
@@ -97,3 +97,27 @@ func readJson() {
     }
 }
 
+func readJsonFromRequest() {
+    
+    let url = URL(string: "http://kavadrive/api/v2/ua/products")!
+    let session = URLSession.shared
+    let request = URLRequest(url: url)
+    let task = session.dataTask(with: request as URLRequest, completionHandler: { data, response, error in
+        guard error == nil else {
+            return
+        }
+        guard let data = data else {
+            return
+        }
+        do {
+            if let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
+                let jsonProduct = json["product"] as? [String:Any]
+                
+            }
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    })
+    
+    task.resume()
+}
