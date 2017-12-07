@@ -74,6 +74,11 @@ func readJson() {
                 let jsonProductCategoryName = jsonDataOne!["actegory_name"] as? String
                 let jsonProductSequenceNumber = Int((jsonDataOne!["sequence_number_id"] as? String)!)
                 let jsonProductDescription = jsonDataOne!["sequence_number_id"] as? String
+                //links
+                let linkArray = jsonDataOne!["links"] as? [Any]
+                let links = linkArray![0] as? [String:Any]
+                let linksRel = links!["rel"] as? String
+                let linksHref = links!["href"] as? String
                 //-----------
                 
                 print("----dictionary----")
