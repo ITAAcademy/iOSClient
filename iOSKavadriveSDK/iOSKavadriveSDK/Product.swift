@@ -75,6 +75,7 @@ func readJson() {
                 let jsonProductSequenceNumber = Int((jsonDataOne!["sequence_number_id"] as? String)!)
                 let jsonProductDescription = jsonDataOne!["sequence_number_id"] as? String
                 //-----------
+                
                 print("----dictionary----")
             } else if let object = json as? [Any] {
                 // json is an array
