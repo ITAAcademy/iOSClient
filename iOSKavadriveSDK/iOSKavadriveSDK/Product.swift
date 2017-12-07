@@ -56,30 +56,32 @@ public struct DumbProduct: ProductProtocol
 
 func readJsonFromFile() {
     do {
-        if let file = Bundle.main.url(forResource: "ProductsAPI_JSON_example", withExtension: "json") {
+        if let file = Bundle.main.url(forResource: "ProductsAPI_JSON_exampleNEW", withExtension: "json") {
             let data = try Data(contentsOf: file)
             let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
             if let jsonProducts = json["products"] as? [String: Any] {
                 let jsonData = jsonProducts["data"] as! [Any]
-                let jsonDataOne = jsonData[0] as? [String: Any]
-                //variables for product structure
-                let jsontTypeName = jsonDataOne!["type_name"] as? String
-                let jsonProductId = Int((jsonDataOne!["id"] as? String)!)
-                let jsonProductName = jsonDataOne!["name"] as? String
-                let jsonProductAmount = Int((jsonDataOne!["amount"] as? String)!)
-                let jsonProductPrice = Double((jsonDataOne!["price"] as? String)!)
-                let jsonProductImage = URL(string:(jsonDataOne!["image"] as? String)!)
-                let jsonProductTypeId = Int((jsonDataOne!["type_id"] as? String)!)
-                let jsonProductCategoryId = Int((jsonDataOne!["category_id"] as? String)!)
-                let jsonProductCategoryName = jsonDataOne!["actegory_name"] as? String
-                let jsonProductSequenceNumber = Int((jsonDataOne!["sequence_number_id"] as? String)!)
-                let jsonProductDescription = jsonDataOne!["sequence_number_id"] as? String
+                //let jsonDataOne = jsonData[0] as? [String: Any]
+                for index in jsonData{
+                    let productData = index as! [String:Any]
+                  //variables for product structure
+                    let productName = productData["name"] as! String
+                    let jsontTypeName = productData["type_name"] as? String
+                    let jsonProductId = Int((productData["id"] as? String)!)
+                    let jsonProductAmount = Int((productData["amount"] as? String)!)
+                    let jsonProductPrice = Double((productData["price"] as? String)!)
+                    let jsonProductImage = URL(string:(productData["image"] as? String)!)
+                    let jsonProductTypeId = Int((productData["type_id"] as? String)!)
+                    let jsonProductCategoryId = Int((productData["category_id"] as? String)!)
+                    let jsonProductCategoryName = productData["actegory_name"] as? String
+                    let jsonProductSequenceNumber = Int((productData["sequence_number_id"] as? String)!)
+                    let jsonProductDescription = productData["sequence_number_id"] as? String
                 //links
-                let linkArray = jsonDataOne!["links"] as? [Any]
-                let links = linkArray![0] as? [String:Any]
-                let linksRel = links!["rel"] as? String
-                let linksHref = links!["href"] as? String
-                //-----------
+//                let linkArray = jsonDataOne!["links"] as? [Any]
+//                let links = linkArray![0] as? [String:Any]
+//                let linksRel = links!["rel"] as? String
+//                let linksHref = links!["href"] as? String
+                } //-----------
                 
                 print("----dictionary----")
             } else if let object = json as? [Any] {

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		178CCBC71FD5B76400C60356 /* ProductsAPI_JSON_example.json in Resources */ = {isa = PBXBuildFile; fileRef = 178CCBC61FD5B76400C60356 /* ProductsAPI_JSON_example.json */; };
+		177A73341FD9945700576E46 /* ProductsAPI_JSON_exampleNEW.json in Resources */ = {isa = PBXBuildFile; fileRef = 177A73331FD9945700576E46 /* ProductsAPI_JSON_exampleNEW.json */; };
 		D995DD621FD32BC000838FFF /* iOSKavadriveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D995DD581FD32BBC00838FFF /* iOSKavadriveSDK.framework */; };
 		D995DD671FD32BC000838FFF /* iOSKavadriveSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DD661FD32BC000838FFF /* iOSKavadriveSDKTests.swift */; };
 		D995DD691FD32BC000838FFF /* iOSKavadriveSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = D995DD5B1FD32BBC00838FFF /* iOSKavadriveSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		178CCBC61FD5B76400C60356 /* ProductsAPI_JSON_example.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProductsAPI_JSON_example.json; sourceTree = "<group>"; };
+		177A73331FD9945700576E46 /* ProductsAPI_JSON_exampleNEW.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProductsAPI_JSON_exampleNEW.json; sourceTree = "<group>"; };
 		D995DD581FD32BBC00838FFF /* iOSKavadriveSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSKavadriveSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D995DD5B1FD32BBC00838FFF /* iOSKavadriveSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSKavadriveSDK.h; sourceTree = "<group>"; };
 		D995DD5C1FD32BBC00838FFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 		D995DD5A1FD32BBC00838FFF /* iOSKavadriveSDK */ = {
 			isa = PBXGroup;
 			children = (
-				178CCBC61FD5B76400C60356 /* ProductsAPI_JSON_example.json */,
+				177A73331FD9945700576E46 /* ProductsAPI_JSON_exampleNEW.json */,
 				D995DD5B1FD32BBC00838FFF /* iOSKavadriveSDK.h */,
 				D995DD5C1FD32BBC00838FFF /* Info.plist */,
 				D995DD721FD32CA100838FFF /* StoresDataProvider.swift */,
@@ -195,7 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				178CCBC71FD5B76400C60356 /* ProductsAPI_JSON_example.json in Resources */,
+				177A73341FD9945700576E46 /* ProductsAPI_JSON_exampleNEW.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
