@@ -11,48 +11,49 @@ import Foundation
 
 public protocol ProductProtocol
 {
-    var id: Int  { get }
-    var name: String { get }
-    var amount: Int { get }
-    var price: Double { get }
-    var image: URL? { get }
-    var typeId: Int { get }
-    var typeName: String { get }
-    var categoryId: Int { get }
-    var categoryName: String { get }
-    var sequenceNumber: Int { get }
-    var descriprion: String { get }
-    var links: [URL] { get }
+    var id: Int  { get set }
+    var name: String { get set }
+    var amount: String { get set }
+    var price: Double { get set }
+    var image: URL? { get set }
+    var typeId: Int { get set }
+    var typeName: String { get set }
+    var categoryId: Int { get set }
+    var categoryName: String { get set }
+    var sequenceNumber: Int { get set }
+    var description: String { get set }
+    var links: [URL] { get set }
 }
 
 public struct DumbProduct: ProductProtocol
 {
     public var image: URL?
 
-    public var descriprion: String { return "Dumb Description" }
+    public var description: String = ""
     
     public var links: [URL] = []
     
-    public var id: Int { return 1 }
+    public var id: Int = 0
     
-    public var name: String { return "Dumb Name" }
+    public var name: String = ""
     
-    public var amount: Int { return 1 }
+    public var amount: String = ""
     
-    public var price: Double { return 1 }
+    public var price: Double = 0
     
-    public var typeId: Int { return 1 }
+    public var typeId: Int = 0
     
-    public var typeName: String { return "Dumb Type Name" }
+    public var typeName: String = ""
     
-    public var categoryId: Int { return 1 }
+    public var categoryId: Int = 0
     
-    public var categoryName: String { return "Dumb Category Name" }
+    public var categoryName: String = ""
     
-    public var sequenceNumber: Int { return 1 }
+    public var sequenceNumber: Int = 0
     
 }
 
+var productExample = DumbProduct()
 
 func readJsonFromFile() {
     do {
@@ -61,26 +62,25 @@ func readJsonFromFile() {
             let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String: Any]
             if let jsonProducts = json["products"] as? [String: Any] {
                 let jsonData = jsonProducts["data"] as! [Any]
-                //let jsonDataOne = jsonData[0] as? [String: Any]
-                for index in jsonData{
+                for index in jsonData{//set data to struct
                     let productData = index as! [String:Any]
                   //variables for product structure
-                    let productName = productData["name"] as! String
-                    let jsontTypeName = productData["type_name"] as? String
-                    let jsonProductId = Int((productData["id"] as? String)!)
-                    let jsonProductAmount = Int((productData["amount"] as? String)!)
-                    let jsonProductPrice = Double((productData["price"] as? String)!)
-                    let jsonProductImage = URL(string:(productData["image"] as? String)!)
-                    let jsonProductTypeId = Int((productData["type_id"] as? String)!)
-                    let jsonProductCategoryId = Int((productData["category_id"] as? String)!)
-                    let jsonProductCategoryName = productData["actegory_name"] as? String
-                    let jsonProductSequenceNumber = Int((productData["sequence_number_id"] as? String)!)
-                    let jsonProductDescription = productData["sequence_number_id"] as? String
+                    productExample.name = productData["name"] as! String
+                    productExample.typeName = productData["type_name"] as! String
+                    productExample.id = Int(productData["id"] as! String)!
+                    productExample.amount = productData["amount"] as! String
+                    productExample.price = Double(productData["price"] as! String)!
+                    productExample.image = URL(string:(productData["image"] as! String))!
+                    productExample.typeId = Int(productData["type_id"] as! String)!
+                    productExample.categoryId = Int(productData["category_id"] as! String)!
+                    productExample.categoryName = productData["actegory_name"] as! String
+                    productExample.sequenceNumber = Int(productData["sequence_number_id"] as! String)!
+                    productExample.description = productData["sequence_number_id"] as! String
                 //links
-//                let linkArray = jsonDataOne!["links"] as? [Any]
-//                let links = linkArray![0] as? [String:Any]
-//                let linksRel = links!["rel"] as? String
-//                let linksHref = links!["href"] as? String
+                    let links = productData["links"] as? [String:Any]
+                    let linksJsonSelf = links!["self"] as? [String: Any]
+                    productExample.links.append(URL(string: linksJsonSelf!["rel"] as! String)!)
+                    productExample.links.append(URL(string: linksJsonSelf!["href"] as! String)!)
                 } //-----------
                 
                 print("----dictionary----")
