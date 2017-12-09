@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		177A73341FD9945700576E46 /* ProductsAPI_JSON_exampleNEW.json in Resources */ = {isa = PBXBuildFile; fileRef = 177A73331FD9945700576E46 /* ProductsAPI_JSON_exampleNEW.json */; };
+		179FE8961FDC85A20040D759 /* ProductDataLocalProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179FE8951FDC85A20040D759 /* ProductDataLocalProvider.swift */; };
+		179FE8981FDC86A60040D759 /* ProductDataAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179FE8971FDC86A60040D759 /* ProductDataAPIProvider.swift */; };
+		179FE89B1FDC8B2C0040D759 /* StoresJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 179FE8991FDC8B2C0040D759 /* StoresJson.json */; };
+		179FE89C1FDC8B2C0040D759 /* CitiesJson.json in Resources */ = {isa = PBXBuildFile; fileRef = 179FE89A1FDC8B2C0040D759 /* CitiesJson.json */; };
 		D995DD621FD32BC000838FFF /* iOSKavadriveSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D995DD581FD32BBC00838FFF /* iOSKavadriveSDK.framework */; };
 		D995DD671FD32BC000838FFF /* iOSKavadriveSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D995DD661FD32BC000838FFF /* iOSKavadriveSDKTests.swift */; };
 		D995DD691FD32BC000838FFF /* iOSKavadriveSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = D995DD5B1FD32BBC00838FFF /* iOSKavadriveSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,6 +33,10 @@
 
 /* Begin PBXFileReference section */
 		177A73331FD9945700576E46 /* ProductsAPI_JSON_exampleNEW.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProductsAPI_JSON_exampleNEW.json; sourceTree = "<group>"; };
+		179FE8951FDC85A20040D759 /* ProductDataLocalProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDataLocalProvider.swift; sourceTree = "<group>"; };
+		179FE8971FDC86A60040D759 /* ProductDataAPIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDataAPIProvider.swift; sourceTree = "<group>"; };
+		179FE8991FDC8B2C0040D759 /* StoresJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = StoresJson.json; sourceTree = "<group>"; };
+		179FE89A1FDC8B2C0040D759 /* CitiesJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CitiesJson.json; sourceTree = "<group>"; };
 		D995DD581FD32BBC00838FFF /* iOSKavadriveSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = iOSKavadriveSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D995DD5B1FD32BBC00838FFF /* iOSKavadriveSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSKavadriveSDK.h; sourceTree = "<group>"; };
 		D995DD5C1FD32BBC00838FFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,12 +90,16 @@
 			isa = PBXGroup;
 			children = (
 				177A73331FD9945700576E46 /* ProductsAPI_JSON_exampleNEW.json */,
+				179FE89A1FDC8B2C0040D759 /* CitiesJson.json */,
+				179FE8991FDC8B2C0040D759 /* StoresJson.json */,
 				D995DD5B1FD32BBC00838FFF /* iOSKavadriveSDK.h */,
 				D995DD5C1FD32BBC00838FFF /* Info.plist */,
 				D995DD721FD32CA100838FFF /* StoresDataProvider.swift */,
 				D995DD741FD32D0C00838FFF /* Store.swift */,
 				D995DD761FD32D3400838FFF /* Product.swift */,
 				D995DD781FD32D5000838FFF /* ProductsDataProvider.swift */,
+				179FE8951FDC85A20040D759 /* ProductDataLocalProvider.swift */,
+				179FE8971FDC86A60040D759 /* ProductDataAPIProvider.swift */,
 			);
 			path = iOSKavadriveSDK;
 			sourceTree = "<group>";
@@ -196,6 +208,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				177A73341FD9945700576E46 /* ProductsAPI_JSON_exampleNEW.json in Resources */,
+				179FE89B1FDC8B2C0040D759 /* StoresJson.json in Resources */,
+				179FE89C1FDC8B2C0040D759 /* CitiesJson.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +230,8 @@
 				D995DD731FD32CA100838FFF /* StoresDataProvider.swift in Sources */,
 				D995DD751FD32D0C00838FFF /* Store.swift in Sources */,
 				D995DD791FD32D5000838FFF /* ProductsDataProvider.swift in Sources */,
+				179FE8981FDC86A60040D759 /* ProductDataAPIProvider.swift in Sources */,
+				179FE8961FDC85A20040D759 /* ProductDataLocalProvider.swift in Sources */,
 				D995DD771FD32D3400838FFF /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
