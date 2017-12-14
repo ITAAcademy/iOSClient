@@ -9,7 +9,7 @@
 import Foundation
 
 
-public class ProductDataAPIProvider {
+public class ProductsDataAPIProvider {
 
     var productExample = DumbProduct()
     

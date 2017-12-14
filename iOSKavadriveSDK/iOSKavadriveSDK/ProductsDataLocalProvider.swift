@@ -9,7 +9,7 @@
 import Foundation
 
 
-public class ProductDataLocalProvider {
+public class ProductsDataLocalProvider {
 
    var productExample = DumbProduct()
     
@@ -40,12 +40,6 @@ public class ProductDataLocalProvider {
                         productExample.links.append(URL(string: linksJsonSelf!["rel"] as! String)!)
                         productExample.links.append(URL(string: linksJsonSelf!["href"] as! String)!)
                     }
-                    
-//                } else if let object = json as? [Any] {
-//                    // json is an array
-//                    print(object)
-//                    print("----array-----")
-              
                 } else {
                     print("JSON is invalid")
                 }
