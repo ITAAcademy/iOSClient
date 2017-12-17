@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		177778401FE6D35D0021102F /* DistanceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1777783F1FE6D35D0021102F /* DistanceCalculator.swift */; };
+		177778421FE6D3930021102F /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177778411FE6D3930021102F /* Locations.swift */; };
 		177A73341FD9945700576E46 /* ProductsAPI_JSON_exampleNEW.json in Resources */ = {isa = PBXBuildFile; fileRef = 177A73331FD9945700576E46 /* ProductsAPI_JSON_exampleNEW.json */; };
 		179FE8961FDC85A20040D759 /* ProductsDataLocalProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179FE8951FDC85A20040D759 /* ProductsDataLocalProvider.swift */; };
 		179FE8981FDC86A60040D759 /* ProductsDataAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179FE8971FDC86A60040D759 /* ProductsDataAPIProvider.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1777783F1FE6D35D0021102F /* DistanceCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceCalculator.swift; sourceTree = "<group>"; };
+		177778411FE6D3930021102F /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
 		177A73331FD9945700576E46 /* ProductsAPI_JSON_exampleNEW.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProductsAPI_JSON_exampleNEW.json; sourceTree = "<group>"; };
 		179FE8951FDC85A20040D759 /* ProductsDataLocalProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsDataLocalProvider.swift; sourceTree = "<group>"; };
 		179FE8971FDC86A60040D759 /* ProductsDataAPIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsDataAPIProvider.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 				179FE8971FDC86A60040D759 /* ProductsDataAPIProvider.swift */,
 				17B4A7491FE2879D0018C6F7 /* City.swift */,
 				17B4A74B1FE288510018C6F7 /* CitiesDataLocalProvider.swift */,
+				1777783F1FE6D35D0021102F /* DistanceCalculator.swift */,
+				177778411FE6D3930021102F /* Locations.swift */,
 			);
 			path = iOSKavadriveSDK;
 			sourceTree = "<group>";
@@ -236,6 +242,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				177778401FE6D35D0021102F /* DistanceCalculator.swift in Sources */,
+				177778421FE6D3930021102F /* Locations.swift in Sources */,
 				D995DD731FD32CA100838FFF /* StoresDataProvider.swift in Sources */,
 				D995DD751FD32D0C00838FFF /* Store.swift in Sources */,
 				D995DD791FD32D5000838FFF /* ProductsDataProvider.swift in Sources */,
