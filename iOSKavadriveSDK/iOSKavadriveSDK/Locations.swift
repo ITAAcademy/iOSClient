@@ -19,10 +19,10 @@ public protocol LocationsProtocol
 public struct Locations : LocationsProtocol
 {
     
-    var latitude: Double = 0
-    var longitude: Double = 0
+   public var latitude: Double = 0
+   public var longitude: Double = 0
     
-    var name: String = ""
+   public var name: String = ""
     
-    var distance: Float = 0
+   public var distance: Float = 0
 }

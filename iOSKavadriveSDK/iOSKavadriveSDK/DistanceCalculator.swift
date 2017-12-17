@@ -21,6 +21,7 @@ public class DistanceCalculator  {//CLLocationManagerDelegate
     //locationManager.requestWhenInUseAuthorization()
     //locationMamager.startUpdatingLocation()
     
+    //CoreLocation methods begin
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:[CLLocation]){
         let location = locations[locations.count - 1]
         if location.horizontalAccuracy > 0 {
@@ -32,9 +33,11 @@ public class DistanceCalculator  {//CLLocationManagerDelegate
             userLocation.name = "MyLocation"
         }
     }
+   
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error)
     }
+    //CoreLocation methods end
     
     func distance(from source: Locations, to target: Locations) -> Double{
         let distanceX = Double(source.latitude - target.latitude)
